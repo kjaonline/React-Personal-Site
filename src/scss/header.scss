@@ -1,0 +1,21 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+
+    // position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    .navigation {
+        ul {
+            list-style-type: none;
+            display: flex;
+            li {
+                margin: 10px;
+            }
+        }
+    }
+}
