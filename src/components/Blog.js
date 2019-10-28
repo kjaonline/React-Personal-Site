@@ -22,13 +22,13 @@ class Blog extends Component {
     render(){
         return (
            <Fragment>
-            <div className="blog">
+            <div className="blogList">
                 <Query query={blog_posts}>
                     {
                         ({loading,  error, data}) => {
                             if(loading) return (
-                                <div className="loading">
-                                    Loading
+                                <div className="blogLoading">
+                                   <div className="loader"></div>
                                 </div>
                             );
 

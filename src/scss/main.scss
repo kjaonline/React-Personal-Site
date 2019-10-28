@@ -13,7 +13,8 @@ html {
   padding: 20px;
   width: 100%;
   height: 100vh;
-  background: #000;
+  background: url('../assets/jaxbg.jpg') center center no-repeat;
+  background-size: cover;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -21,7 +22,39 @@ html {
   .text {
 
   }
+}
 
+.blogList {
+	padding: 20px;
+	.postPrev {
+		h2 {
+			text-transform: uppercase;
+		}
+	}
+
+	.blogLoading {
+		.loader {
+			width: 300px;
+			height: 300px;
+			border-top: 10px solid red;
+			border-right: 10px solid #000;
+			border-bottom: 10px solid #000;
+			border-left: 10px solid #000;
+			border-radius: 999px;
+			animation-name: rotate;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes rotate {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	}
 }
   
 
