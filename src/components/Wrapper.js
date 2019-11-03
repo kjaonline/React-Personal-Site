@@ -18,11 +18,13 @@ class Wrapper extends Component {
 		path: 'test'
 	}
 
+	//This removes the first forward slash
 	routeNameFixer(route){
 		return(route.substring(1))
 	}
+	
+	//This sets page className if page is loaded directly 
 	componentDidMount(){
-		
 		if(this.props.location.pathname === '/') {
 			this.setState({
 				path: 'home'
@@ -33,6 +35,8 @@ class Wrapper extends Component {
 			})
 		}
 	}
+
+	// this sets page className if page is loaded via react router click
 	componentDidUpdate(route){
 		if(route.history.location.pathname !== route.location.pathname) {
 			let pageClass = null;
