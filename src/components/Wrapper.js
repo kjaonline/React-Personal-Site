@@ -22,7 +22,7 @@ class Wrapper extends Component {
 	routeNameFixer(route){
 		return(route.substring(1))
 	}
-	
+
 	//This sets page className if page is loaded directly 
 	componentDidMount(){
 		if(this.props.location.pathname === '/') {
