@@ -3,19 +3,31 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-
-    // position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #fff;
+	background: #000;
+    
+	
+	a, h1 {
+		color: #fff;
+		text-decoration: none;
+	}
     .navigation {
+		
         ul {
             list-style-type: none;
             display: flex;
             li {
-                margin: 10px;
+				margin: 10px;
+				
             }
         }
     }
 }
+
+.home .headerContainer {
+	position: fixed;
+    top: 0;
+    left: 0;
+	width: 100%;
+	background: transparent;
+}
+

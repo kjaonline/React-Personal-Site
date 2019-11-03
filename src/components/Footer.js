@@ -12,11 +12,21 @@ class Footer extends Component {
     }
     componentDidMount(){
         this.getDate();
-    }
+	}
+	copyEmail(){
+		let emailCopy = document.getElementById('emailCopy')
+		emailCopy.select();
+		emailCopy.setSelectionRange(0, 99999);
+		document.execCommand('copy')
+		console.log('copied')
+	}
     render() {
         return(
             <div className="footer">
-                Kris Alcordo. &copy; 2019 - {this.state.date}
+                Kris Alcordo. &copy; 2019 - {this.state.date} <br />
+				<div className="footerLinks">
+					<a href="mailto:kris@alcordo.com">kris@alcordo.com</a>
+				</div>
             </div>
         )
     }

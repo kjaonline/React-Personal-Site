@@ -5,7 +5,8 @@ class HomeContent extends Component {
         return (
             <div className="homeHero">
                 <div className="text">
-                    HomepageContent
+                    Hi! My name is <strong>Kris Alcordo</strong>, <br /> I'm a web developer and I want to build websites that make a difference.
+					<p></p>
                 </div>
             </div>
         )

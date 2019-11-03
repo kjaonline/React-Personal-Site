@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
 import {
-    Link
+    NavLink
 } from "react-router-dom";
 
 class Navigation extends Component {
+	
     render() {
         return(
             <div className="navigation">
             <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink to="/" activeClassName="active">Home</NavLink>
                 </li>
                 <li>
-                    <Link to="/portfolio">Portfolio</Link>
+                    <NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink>
                 </li>
                 <li>
-                   <Link to="/blog">Blog</Link>
+                   <NavLink to="/blog" activeClassName="active">Blog</NavLink>
                 </li>
                 <li>
-                   <Link to="/about">About</Link>
+                   <NavLink to="/about" activeClassName="active">About</NavLink>
                 </li>
             </ul>
         </div>
