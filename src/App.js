@@ -11,7 +11,7 @@ import Wrapper from './components/Wrapper'
 
 //GraphQL client set-up
 const client = new ApolloClient({
-  uri: 'https://content.krisalcordo.com/graphql'
+  uri: 'https://api.krisalcordo.com/graphql'
 })
 
 function App() {
