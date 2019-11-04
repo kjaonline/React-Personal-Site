@@ -11,6 +11,7 @@ import HomeContent from './HomeContent';
 import PortfolioContent from './PortfolioContent';
 import AboutContent from './AboutContent';
 import Blog from './Blog';
+import BlogSingle from './BlogSingle';
 
 class Wrapper extends Component {
 
@@ -71,6 +72,9 @@ class Wrapper extends Component {
 							</Route>
 							<Route exact path="/blog">
 								<Blog />
+							</Route>
+							<Route exact path="/blog/:id">
+								<BlogSingle />
 							</Route>
 						</Switch>
 					</div>

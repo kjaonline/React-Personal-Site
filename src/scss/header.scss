@@ -9,6 +9,7 @@
 	a, h1 {
 		color: #fff;
 		text-decoration: none;
+		transition: 0.2s all;
 	}
     .navigation {
 		
@@ -16,10 +17,9 @@
             list-style-type: none;
             display: flex;
             li {
-				margin: 10px;
+				padding: 10px 20px;
 				a.active {
 					font-weight: bold;
-					text-decoration: underline;
 				}
             }
         }

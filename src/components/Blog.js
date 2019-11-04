@@ -11,7 +11,10 @@ const blog_posts = gql `
                     id
                     title
                     date
-                    excerpt
+					excerpt
+					featuredImage {
+						sourceUrl
+					  }
                 }
             }
         }
@@ -35,7 +38,7 @@ class Blog extends Component {
                             if(error) console.log(error);
                             
                             let postArray =  data.posts.edges;
-                            // console.log(postArray)
+                            console.log(postArray)
                             return <Fragment>
                                 {
                                    postArray.map(post => (
